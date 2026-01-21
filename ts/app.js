@@ -115,14 +115,13 @@ class PortfolioApp {
     }
     // Establecer fondo topográfico generado en tiempo de ejecución
     setTopoBackground() {
-        // Patrón topográfico seamless (ondas continuas) en gris con líneas negras suaves
-        const svg = `<svg width="240" height="120" viewBox="0 0 240 120" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="#000" stroke-width="1.1" opacity="0.28" stroke-linecap="round"><path d="M0 30 C40 10 80 50 120 30 C160 10 200 50 240 30"/><path d="M0 60 C40 40 80 80 120 60 C160 40 200 80 240 60"/><path d="M0 90 C40 70 80 110 120 90 C160 70 200 110 240 90"/></g></svg>`;
+        const svg = `<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="#a8b5cc" stroke-width="1.1" opacity="0.32"><path d="M-30 90c60-40 120-40 180 0s120 40 180 0 120-40 180 0"/><path d="M0 150c70-30 140-30 210 0s140 30 210 0 140-30 210 0"/><path d="M-20 210c80-35 160-35 240 0s160 35 240 0 160-35 240 0"/><path d="M10 40c50-25 100-25 150 0s100 25 150 0 100-25 150 0"/></g></svg>`;
         const encoded = encodeURIComponent(svg);
         const root = document.documentElement;
-        const bgColor = '#e5e5e5';
+        const bgColor = getComputedStyle(root).getPropertyValue('--light-color').trim() || '#f8f9fa';
         document.body.style.backgroundColor = bgColor;
         document.body.style.backgroundImage = `url("data:image/svg+xml,${encoded}")`;
-        document.body.style.backgroundSize = '200px auto';
+        document.body.style.backgroundSize = '220px auto';
         document.body.style.backgroundRepeat = 'repeat';
         document.body.style.backgroundAttachment = 'fixed';
     }

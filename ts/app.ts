@@ -115,6 +115,9 @@ class PortfolioApp {
     init(): void {
         // Configurar año actual en el footer
         this.setCurrentYear();
+
+        // Fondo topográfico dinámico via SVG inline
+        this.setTopoBackground();
         
         // Configurar animación de números
         this.setupCounterAnimation();
@@ -150,6 +153,20 @@ class PortfolioApp {
         if (yearElement) {
             yearElement.textContent = new Date().getFullYear().toString();
         }
+    }
+
+    // Establecer fondo topográfico generado en tiempo de ejecución
+    private setTopoBackground(): void {
+        // Patrón topográfico seamless (ondas continuas) en gris con líneas negras suaves
+        const svg = `<svg width="240" height="120" viewBox="0 0 240 120" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="#000" stroke-width="1.1" opacity="0.28" stroke-linecap="round"><path d="M0 30 C40 10 80 50 120 30 C160 10 200 50 240 30"/><path d="M0 60 C40 40 80 80 120 60 C160 40 200 80 240 60"/><path d="M0 90 C40 70 80 110 120 90 C160 70 200 110 240 90"/></g></svg>`;
+        const encoded = encodeURIComponent(svg);
+        const root = document.documentElement;
+        const bgColor = '#e5e5e5';
+        document.body.style.backgroundColor = bgColor;
+        document.body.style.backgroundImage = `url("data:image/svg+xml,${encoded}")`;
+        document.body.style.backgroundSize = '200px auto';
+        document.body.style.backgroundRepeat = 'repeat';
+        document.body.style.backgroundAttachment = 'fixed';
     }
 
     // Configurar animación de contadores
