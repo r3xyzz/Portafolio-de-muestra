@@ -1,0 +1,18 @@
+# Dependencias
+node_modules/
+
+# Registros
+npm-debug.log*
+yarn-error.log
+*.log
+
+# Entornos locales
+.env
+.env.*.local
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Salidas de TS (deja js/ porque lo necesitas servido)
+*.tsbuildinfo

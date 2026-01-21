@@ -1,0 +1,14 @@
+{
+  "name": "mi-portafolio",
+  "version": "1.0.0",
+  "description": "Portafolio web personal desarrollado con TypeScript",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "serve": "live-server"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "typescript": "^5.9.3"
+  }
+}
