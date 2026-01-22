@@ -16,6 +16,7 @@ interface Project {
     tags: string[];
     demoUrl?: string;
     codeUrl?: string;
+    images?: string[];
 }
 
 // Datos de ejemplo para habilidades
@@ -38,7 +39,16 @@ const projectsData: Project[] = [
         description: "Panel para gestión de citas veterinarias y atención a mascotas.", 
         category: "web",
         tags: ["Front-end", "UI", "Veterinaria"],
-        codeUrl: "https://github.com/r3xyzz/VISTA-TRABAJADOR-Prototipo-Mascota-Feliz"
+        codeUrl: "https://github.com/r3xyzz/VISTA-TRABAJADOR-Prototipo-Mascota-Feliz",
+        images: [
+            "demo/mascota.png",
+            "demo/mascota_2.png",
+            "demo/mascota_3.png",
+            "demo/mascota_4.png",
+            "demo/mascota_5.png",
+            "demo/mascota_6.png",
+            "demo/mascota_7.png"
+        ]
     },
     { 
         id: 2, 
@@ -46,7 +56,15 @@ const projectsData: Project[] = [
         description: "Prototipo web para clientes: reservas y seguimiento de mascotas.", 
         category: "web",
         tags: ["Front-end", "UX", "Veterinaria"],
-        codeUrl: "https://github.com/r3xyzz/-VISTA-CLIENTE-Prototipo-Mascota-Feliz"
+        codeUrl: "https://github.com/r3xyzz/-VISTA-CLIENTE-Prototipo-Mascota-Feliz",
+        images: [
+            "demo/mascota_cli.png",
+            "demo/mascota_cli_2.png",
+            "demo/mascota_cli_3.png",
+            "demo/mascota_cli_4.png",
+            "demo/mascota_cli_5.png",
+            "demo/mascota_cli_6.png"
+        ]
     },
     { 
         id: 3, 
@@ -70,7 +88,11 @@ const projectsData: Project[] = [
         description: "Cotización y modelado 3D para personalizar tarros y empaques.", 
         category: "web",
         tags: ["3D", "Cotizador", "UI"],
-        codeUrl: "https://github.com/r3xyzz/arma-tu-tarrito"
+        codeUrl: "https://github.com/r3xyzz/arma-tu-tarrito",
+        images: [
+            "demo/tarrito.png",
+            "demo/tarrito_2.png"
+        ]
     },
     { 
         id: 6, 
@@ -289,10 +311,20 @@ class PortfolioApp {
             if (project.category === 'app') categoryIcon = 'fas fa-mobile-alt';
             if (project.category === 'design') categoryIcon = 'fas fa-palette';
             
-            projectCard.innerHTML = `
+            // Crear sección de imagen (siempre icono de categoría)
+            const imageSection = `
                 <div class="project-image">
                     <i class="${categoryIcon}"></i>
                 </div>
+            `;
+            
+            // Crear datos del carrusel como atributo data si tiene imágenes
+            const carouselData = project.images && project.images.length > 0 
+                ? `data-carousel='${JSON.stringify(project.images)}'` 
+                : '';
+            
+            projectCard.innerHTML = `
+                ${imageSection}
                 <div class="project-info">
                     <h3 class="project-title">${project.title}</h3>
                     <p class="project-description">${project.description}</p>
@@ -300,7 +332,7 @@ class PortfolioApp {
                         ${project.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
                     </div>
                     <div class="project-links">
-                        ${project.demoUrl ? `<a href="${project.demoUrl}" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>` : ''}
+                        ${project.images && project.images.length > 0 ? `<button class="project-link demo-btn" ${carouselData}><i class="fas fa-play-circle"></i> Demo</button>` : ''}
                         ${project.codeUrl ? `<a href="${project.codeUrl}" class="project-link" target="_blank"><i class="fab fa-github"></i> Código</a>` : ''}
                     </div>
                 </div>
@@ -308,6 +340,114 @@ class PortfolioApp {
             
             this.projectsContainer?.appendChild(projectCard);
         });
+        
+        // Configurar botones Demo después de renderizar
+        this.setupDemoButtons();
+    }
+
+    // Configurar botones Demo con modal
+    private setupDemoButtons(): void {
+        const demoButtons = document.querySelectorAll('.demo-btn');
+        
+        demoButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const imagesJson = button.getAttribute('data-carousel');
+                if (imagesJson) {
+                    try {
+                        const images = JSON.parse(imagesJson);
+                        this.openDemoModal(images);
+                    } catch (e) {
+                        console.error('Error parsing carousel images:', e);
+                    }
+                }
+            });
+        });
+    }
+
+    // Abrir modal con carrusel de imágenes
+    private openDemoModal(images: string[]): void {
+        // Crear modal
+        const modal = document.createElement('div');
+        modal.className = 'demo-modal';
+        modal.innerHTML = `
+            <div class="demo-modal-content">
+                <button class="modal-close"><i class="fas fa-times"></i></button>
+                <div class="carousel-container" id="modal-carousel">
+                    ${images.map((img, idx) => `
+                        <div class="carousel-slide ${idx === 0 ? 'active' : ''}">
+                            <img src="${encodeURI(img)}" alt="Demo - ${idx + 1}" onerror="this.onerror=null; this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22><rect width=%22400%22 height=%22300%22 fill=%22%23f1f3f5%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2216%22 fill=%22%23666%22>Imagen no disponible</text></svg>';" />
+                        </div>
+                    `).join('')}
+                </div>
+                <div class="carousel-controls">
+                    ${images.map((_, idx) => `
+                        <button class="carousel-dot ${idx === 0 ? 'active' : ''}" data-slide="${idx}" title="Foto ${idx + 1}"></button>
+                    `).join('')}
+                </div>
+            </div>
+        `;
+        
+        document.body.appendChild(modal);
+        
+        // Configurar carrusel del modal
+        const container = modal.querySelector('.carousel-container') as HTMLElement;
+        const slides = modal.querySelectorAll('.carousel-slide');
+        const dots = modal.querySelectorAll('.carousel-dot');
+        let currentSlide = 0;
+        let autoplayInterval: any;
+        
+        const goToSlide = (slideIndex: number) => {
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            currentSlide = slideIndex % slides.length;
+            (slides[currentSlide] as HTMLElement).classList.add('active');
+            (dots[currentSlide] as HTMLElement).classList.add('active');
+        };
+        
+        // Click en los puntos
+        dots.forEach((dot, idx) => {
+            dot.addEventListener('click', () => {
+                clearInterval(autoplayInterval);
+                goToSlide(idx);
+                startAutoplay();
+            });
+        });
+        
+        // Autoplay cada 3 segundos
+        const startAutoplay = () => {
+            autoplayInterval = setInterval(() => {
+                goToSlide(currentSlide + 1);
+            }, 3000);
+        };
+        
+        // Cerrar modal
+        const closeBtn = modal.querySelector('.modal-close') as HTMLElement;
+        closeBtn.addEventListener('click', () => {
+            clearInterval(autoplayInterval);
+            modal.remove();
+        });
+        
+        // Cerrar al hacer click fuera del contenido
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                clearInterval(autoplayInterval);
+                modal.remove();
+            }
+        });
+        
+        // Cerrar con tecla Escape
+        const escapeHandler = (e: KeyboardEvent) => {
+            if (e.key === 'Escape') {
+                clearInterval(autoplayInterval);
+                modal.remove();
+                document.removeEventListener('keydown', escapeHandler);
+            }
+        };
+        document.addEventListener('keydown', escapeHandler);
+        
+        // Iniciar autoplay
+        startAutoplay();
     }
 
     // Configurar filtros de proyectos
