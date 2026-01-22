@@ -214,17 +214,20 @@ section {
     justify-content: center;
 }
 
-.image-placeholder {
+.image-photo {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 8rem;
+    overflow: hidden;
     box-shadow: var(--shadow);
+    border: 6px solid #fff;
+    background: linear-gradient(135deg, #e9ecef, #dfe6f2);
+}
+
+.image-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Sección Sobre Mí */

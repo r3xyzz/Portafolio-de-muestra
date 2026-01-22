@@ -11,61 +11,63 @@ const skillsData = [
     { id: 7, name: "Diseño UI/UX", icon: "fas fa-palette", level: 75 },
     { id: 8, name: "Bases de Datos", icon: "fas fa-database", level: 65 }
 ];
-// Datos de ejemplo para proyectos
+// Proyectos reales
 const projectsData = [
     {
         id: 1,
-        title: "E-commerce Moderno",
-        description: "Plataforma de comercio electrónico con carrito de compras y sistema de pagos.",
+        title: "Mascota Feliz · Vista Trabajador",
+        description: "Panel para gestión de citas veterinarias y atención a mascotas.",
         category: "web",
-        tags: ["TypeScript", "React", "Node.js", "MongoDB"],
-        demoUrl: "#",
-        codeUrl: "#"
+        tags: ["Front-end", "UI", "Veterinaria"],
+        codeUrl: "https://github.com/r3xyzz/VISTA-TRABAJADOR-Prototipo-Mascota-Feliz"
     },
     {
         id: 2,
-        title: "App de Tareas",
-        description: "Aplicación para gestión de tareas con recordatorios y categorías.",
-        category: "app",
-        tags: ["TypeScript", "React Native", "Firebase"],
-        demoUrl: "#",
-        codeUrl: "#"
+        title: "Mascota Feliz · Vista Cliente",
+        description: "Prototipo web para clientes: reservas y seguimiento de mascotas.",
+        category: "web",
+        tags: ["Front-end", "UX", "Veterinaria"],
+        codeUrl: "https://github.com/r3xyzz/-VISTA-CLIENTE-Prototipo-Mascota-Feliz"
     },
     {
         id: 3,
-        title: "Portafolio Personal",
-        description: "Sitio web personal para mostrar proyectos y habilidades.",
-        category: "web",
-        tags: ["TypeScript", "HTML", "CSS"],
-        demoUrl: "#",
-        codeUrl: "#"
+        title: "Habitly · Gestión de Hábitos",
+        description: "Aplicación móvil para creación y seguimiento de hábitos diarios.",
+        category: "app",
+        tags: ["Mobile", "Hábitos", "UI"],
+        codeUrl: "https://github.com/r3xyzz/Proyecto-app-movil-Et-Ara"
     },
     {
         id: 4,
-        title: "Diseño Sistema",
-        description: "Sistema de diseño para aplicaciones web con componentes reutilizables.",
-        category: "design",
-        tags: ["Figma", "UI/UX", "Prototipado"],
-        demoUrl: "#",
-        codeUrl: "#"
+        title: "Módulo de Contabilidad Digital",
+        description: "Módulo integrable para contabilidad y gestión financiera empresarial, conectado a bases de datos locales de clientes.",
+        category: "web",
+        tags: ["Contabilidad", "Integración", "DB local"],
+        codeUrl: "https://github.com/r3xyzz/modulo-8-contabilidad"
     },
     {
         id: 5,
-        title: "API REST",
-        description: "API para gestión de usuarios con autenticación JWT y documentación Swagger.",
+        title: "Arma tu Tarrito · Cotizador 3D",
+        description: "Cotización y modelado 3D para personalizar tarros y empaques.",
         category: "web",
-        tags: ["Node.js", "Express", "MongoDB", "JWT"],
-        demoUrl: "#",
-        codeUrl: "#"
+        tags: ["3D", "Cotizador", "UI"],
+        codeUrl: "https://github.com/r3xyzz/arma-tu-tarrito"
     },
     {
         id: 6,
-        title: "App del Clima",
-        description: "Aplicación del clima con pronóstico por hora y ubicación automática.",
-        category: "app",
-        tags: ["React", "API", "CSS"],
-        demoUrl: "#",
-        codeUrl: "#"
+        title: "Transformación Digital",
+        description: "Portal de transformación digital para gestión de iniciativas, con conexión a bases de datos locales corporativas.",
+        category: "web",
+        tags: ["Transformación", "Gestión", "DB local"],
+        codeUrl: "https://github.com/r3xyzz/PROYECTO-TRANSFORMACION-DIGITAL-COMISION/tree/DEVfelipe"
+    },
+    {
+        id: 7,
+        title: "Portal de Reciclaje",
+        description: "Sitio informativo de reciclaje de plásticos y sostenibilidad.",
+        category: "web",
+        tags: ["Reciclaje", "Sostenibilidad", "Web"],
+        codeUrl: "https://github.com/r3xyzz/Pedro-Carrasco-COMISION"
     }
 ];
 // Clase principal de la aplicación
