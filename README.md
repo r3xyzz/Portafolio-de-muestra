@@ -39,21 +39,6 @@ npm run serve
    ```bash
    npm run watch
    ```
-
-## 📦 Deploy en GitHub Pages
-
-1. Asegúrate de que todos los cambios estén compilados
-2. Commit y push:
-   ```bash
-   git add -A
-   git commit -m "Update portfolio"
-   git push origin Master
-   ```
-3. En GitHub → Settings → Pages:
-   - Source: Deploy from a branch
-   - Branch: Master
-   - Folder: / (root)
-
 ## 🎨 Características
 
 - ✅ TypeScript para código tipado
