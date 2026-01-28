@@ -19,9 +19,6 @@ Portafolio web personal desarrollado con TypeScript, HTML5 y CSS3.
 # Compilar TypeScript
 npm run build
 
-# Compilar TypeScript en modo watch
-npm run watch
-
 # Servidor local
 npm run serve
 ```
@@ -34,10 +31,6 @@ npm run serve
 4. Después de editar TS, ejecuta:
    ```bash
    npm run build
-   ```
-5. O usa modo watch para auto-compilar:
-   ```bash
-   npm run watch
    ```
 ## 🎨 Características
 
