@@ -63,6 +63,15 @@ section {
     background-color: var(--primary-color);
 }
 
+.section-subtitle {
+    text-align: center;
+    color: var(--gray-color);
+    font-size: 0.95rem;
+    max-width: 700px;
+    margin: -30px auto 40px;
+    line-height: 1.6;
+}
+
 .btn {
     display: inline-block;
     padding: 12px 28px;

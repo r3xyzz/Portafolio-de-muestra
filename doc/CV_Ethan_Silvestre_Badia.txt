@@ -1,0 +1,169 @@
+═══════════════════════════════════════════════════════════════
+                ETHAN SILVESTRE BADIA
+        Desarrollador Web & Aplicaciones Móviles
+═══════════════════════════════════════════════════════════════
+
+📧 Email: ethansilvestrebadia69@gmail.com
+📱 Teléfono: +56 9 8461 4288
+📍 Ubicación: Viña del Mar, Valparaíso, Chile
+🔗 GitHub: github.com/r3xyzz
+🔗 LinkedIn: linkedin.com/in/ethan-silvestre-badia69
+🔗 Instagram: @ethansb.py
+🌐 Portafolio: r3xyzz.github.io/Portafolio-de-muestra
+
+═══════════════════════════════════════════════════════════════
+                    PERFIL PROFESIONAL
+═══════════════════════════════════════════════════════════════
+
+Estudiante de Ingeniería en Informática en Duoc UC con enfoque
+en desarrollo web y aplicaciones móviles. Apasionado por crear
+soluciones digitales innovadoras y funcionales utilizando las
+últimas tecnologías. Experiencia en TypeScript, JavaScript,
+HTML5, CSS3 y frameworks modernos.
+
+═══════════════════════════════════════════════════════════════
+                       EDUCACIÓN
+═══════════════════════════════════════════════════════════════
+
+Ingeniería en Informática
+Duoc UC - Viña del Mar, Chile
+2021 - Presente
+
+Especialización en:
+• Lenguajes de programación
+• Desarrollo web front-end y back-end
+• Aplicaciones móviles
+• Bases de datos
+• Metodologías ágiles
+
+═══════════════════════════════════════════════════════════════
+                 HABILIDADES TÉCNICAS
+═══════════════════════════════════════════════════════════════
+
+Lenguajes de Programación:
+• TypeScript / JavaScript (ES6+)
+• HTML5 & CSS3
+• Python
+• SQL
+
+Frameworks & Librerías:
+• React
+• Node.js
+• Express
+• React Native
+
+Herramientas & Tecnologías:
+• Git & GitHub
+• VS Code
+• Responsive Design
+• UI/UX Design
+• REST APIs
+• Bases de datos (MySQL, MongoDB)
+
+═══════════════════════════════════════════════════════════════
+                PROYECTOS DESTACADOS
+═══════════════════════════════════════════════════════════════
+
+1. MASCOTA FELIZ · VISTA TRABAJADOR
+   Aplicación móvil para veterinarios
+   • Gestión de citas veterinarias
+   • Seguimiento de pacientes (mascotas)
+   • Interfaz intuitiva para profesionales
+   • Tecnologías: Mobile UI/UX, JavaScript
+   🔗 github.com/r3xyzz/VISTA-TRABAJADOR-Prototipo-Mascota-Feliz
+
+2. MASCOTA FELIZ · VISTA CLIENTE
+   Prototipo web para clientes de veterinarias
+   • Sistema de reservas online
+   • Seguimiento de mascotas
+   • Historial de citas y tratamientos
+   • Tecnologías: HTML5, CSS3, JavaScript
+   🔗 github.com/r3xyzz/-VISTA-CLIENTE-Prototipo-Mascota-Feliz
+
+3. HABITLY · GESTIÓN DE HÁBITOS
+   Aplicación móvil para tracking de hábitos
+   • Creación y seguimiento de hábitos diarios
+   • Estadísticas y progreso visual
+   • Notificaciones y recordatorios
+   • Tecnologías: Mobile Development, UI Design
+   🔗 github.com/r3xyzz/Proyecto-app-movil-Et-Ara
+
+4. ARMA TU TARRITO · COTIZADOR 3D
+   Plataforma web de personalización de empaques
+   • Modelado 3D interactivo
+   • Sistema de cotización en tiempo real
+   • Personalización de productos
+   • Tecnologías: JavaScript, 3D Web, CSS3
+   🔗 github.com/r3xyzz/arma-tu-tarrito
+
+5. MÓDULO DE CONTABILIDAD DIGITAL
+   Sistema de gestión financiera empresarial
+   • Integración con bases de datos locales
+   • Gestión de contabilidad y finanzas
+   • Reportes automatizados
+   • Tecnologías: JavaScript, SQL, Backend
+   🔗 github.com/r3xyzz/modulo-8-contabilidad
+
+6. PORTAL DE TRANSFORMACIÓN DIGITAL
+   Plataforma de gestión de iniciativas corporativas
+   • Sistema de gestión de proyectos digitales
+   • Integración con bases de datos corporativas
+   • Panel de administración
+   • Tecnologías: Web Development, Database Integration
+   🔗 github.com/r3xyzz/PROYECTO-TRANSFORMACION-DIGITAL-COMISION
+
+7. PORTAL DE RECICLAJE
+   Sitio web informativo sobre sostenibilidad
+   • Información sobre reciclaje de plásticos
+   • Contenido educativo ambiental
+   • Diseño responsive y accesible
+   • Tecnologías: HTML5, CSS3, JavaScript
+   🔗 github.com/r3xyzz/Pedro-Carrasco-COMISION
+
+═══════════════════════════════════════════════════════════════
+                   EXPERIENCIA LABORAL
+═══════════════════════════════════════════════════════════════
+
+Desarrollador Web Freelance
+2022 - Presente
+• Desarrollo de proyectos web personalizados
+• Diseño e implementación de interfaces de usuario
+• Optimización de rendimiento y SEO
+• Colaboración con clientes en metodologías ágiles
+
+═══════════════════════════════════════════════════════════════
+                  COMPETENCIAS BLANDAS
+═══════════════════════════════════════════════════════════════
+
+• Aprendizaje continuo y autodidacta
+• Trabajo en equipo y colaboración
+• Resolución de problemas
+• Comunicación efectiva
+• Gestión de tiempo y organización
+• Creatividad e innovación
+• Adaptabilidad a nuevas tecnologías
+
+═══════════════════════════════════════════════════════════════
+                        IDIOMAS
+═══════════════════════════════════════════════════════════════
+
+Español: Nativo
+Inglés: Intermedio (lectura técnica)
+
+═══════════════════════════════════════════════════════════════
+                       INTERESES
+═══════════════════════════════════════════════════════════════
+
+• Nuevas tecnologías web y móviles
+• Diseño UI/UX
+• Código limpio y mejores prácticas
+• Open source y comunidad developer
+• Inteligencia artificial aplicada
+• Desarrollo sostenible
+
+═══════════════════════════════════════════════════════════════
+
+                   DISPONIBLE PARA PROYECTOS
+              Contacto: ethansilvestrebadia69@gmail.com
+                   
+═══════════════════════════════════════════════════════════════

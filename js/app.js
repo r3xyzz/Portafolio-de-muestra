@@ -16,9 +16,9 @@ const projectsData = [
     {
         id: 1,
         title: "Mascota Feliz · Vista Trabajador",
-        description: "Panel para gestión de citas veterinarias y atención a mascotas.",
-        category: "web",
-        tags: ["Front-end", "UI", "Veterinaria"],
+        description: "Aplicación móvil para veterinarios: gestión de citas, atención y seguimiento de mascotas.",
+        category: "app",
+        tags: ["Mobile", "UI/UX", "Veterinaria"],
         codeUrl: "https://github.com/r3xyzz/VISTA-TRABAJADOR-Prototipo-Mascota-Feliz",
         images: [
             "demo/mascota.png",
@@ -94,7 +94,7 @@ const projectsData = [
 // Clase principal de la aplicación
 class PortfolioApp {
     constructor() {
-        this.currentFilter = "all";
+        this.currentFilter = 'all';
         this.skillsContainer = document.getElementById('skillsContainer');
         this.projectsContainer = document.getElementById('projectsContainer');
         this.filterButtons = document.querySelectorAll('.filter-btn');
