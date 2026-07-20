@@ -109,6 +109,23 @@ const projectsData: Project[] = [
         category: "web",
         tags: ["Reciclaje", "Sostenibilidad", "Web"],
         codeUrl: "https://github.com/r3xyzz/Pedro-Carrasco-COMISION"
+    },
+    {
+        id: 8,
+        title: "Sistema-de-Gestion-ET",
+        description: "Proyecto en PHP puro (vanilla) + MySQL (XAMPP) + CMD para gestionar el inventario de materiales de una empresa constructora.",
+        category: "web",
+        tags: ["PHP", "MySQL", "Inventario"],
+        codeUrl: "https://github.com/r3xyzz/Prototipo-Sistema-de-Gestion-ET.git",
+        images: [
+            "demo/vistaConstructora 1.png",
+            "demo/vistaConstructora 2.png",
+            "demo/vistaConstructora 3.png",
+            "demo/vistaConstructora 4.png",
+            "demo/vistaConstructora 5.png",
+            "demo/vistaConstructora 6.png",
+            "demo/vistaConstructora 7.png"
+        ]
     }
 ];
 
